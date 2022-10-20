@@ -1,0 +1,104 @@
+// DAX Query
+DEFINE
+  VAR __DS0FilterTable = 
+    FILTER(
+      KEEPFILTERS(VALUES('LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day])),
+      AND(
+        'LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day] >= 23,
+        'LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day] <= 30
+      )
+    )
+
+  VAR __SQDS0Core = 
+    SUMMARIZECOLUMNS(
+      '2014-01'[TerritoryID],
+      __DS0FilterTable,
+      "SumTotalDue", CALCULATE(SUM('2014-01'[TotalDue]))
+    )
+
+  VAR __SQDS0BodyLimited = 
+    TOPN(6, __SQDS0Core, [SumTotalDue], 0)
+
+  VAR __DS0Core = 
+    SUMMARIZECOLUMNS(
+      'Sales SalesTerritory'[Name],
+      __DS0FilterTable,
+      __SQDS0BodyLimited,
+      "SumTotalDue", CALCULATE(SUM('2014-01'[TotalDue]))
+    )
+
+  VAR __DS0PrimaryWindowed = 
+    TOPN(1001, __DS0Core, [SumTotalDue], 0, 'Sales SalesTerritory'[Name], 1)
+
+EVALUATE
+  __DS0PrimaryWindowed
+
+ORDER BY
+  [SumTotalDue] DESC, 'Sales SalesTerritory'[Name]
+
+
+
+// DAX Query
+DEFINE
+  VAR __DS0FilterTable = 
+    FILTER(
+      KEEPFILTERS(VALUES('LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day])),
+      AND(
+        'LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day] >= 23,
+        'LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day] <= 30
+      )
+    )
+
+  VAR __DS0Core = 
+    SUMMARIZECOLUMNS(
+      'Production ProductCategory'[Name],
+      __DS0FilterTable,
+      "SumTaxAmt", CALCULATE(SUM('2014-01'[TaxAmt]))
+    )
+
+  VAR __DS0PrimaryWindowed = 
+    TOPN(1001, __DS0Core, [SumTaxAmt], 0, 'Production ProductCategory'[Name], 1)
+
+EVALUATE
+  __DS0PrimaryWindowed
+
+ORDER BY
+  [SumTaxAmt] DESC, 'Production ProductCategory'[Name]
+
+
+
+// DAX Query
+EVALUATE
+  ROW(
+    "MinDay", CALCULATE(MIN('LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day])),
+    "MaxDay", CALCULATE(MAX('LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day]))
+  )
+
+
+
+// DAX Query
+DEFINE
+  VAR __DS0FilterTable = 
+    FILTER(
+      KEEPFILTERS(VALUES('LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day])),
+      AND(
+        'LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day] >= 23,
+        'LocalDateTable_12d45105-a6a2-4ee4-87f5-ae7e53b6d38a'[Day] <= 30
+      )
+    )
+
+  VAR __DS0Core = 
+    SUMMARIZECOLUMNS(
+      ROLLUPADDISSUBTOTAL('SalesLT Store'[Name], "IsGrandTotalRowTotal"),
+      __DS0FilterTable,
+      "SumFreight", IGNORE(CALCULATE(SUM('2014-01'[Freight])))
+    )
+
+  VAR __DS0PrimaryWindowed = 
+    TOPN(502, __DS0Core, [IsGrandTotalRowTotal], 0, 'SalesLT Store'[Name], 1)
+
+EVALUATE
+  __DS0PrimaryWindowed
+
+ORDER BY
+  [IsGrandTotalRowTotal] DESC, 'SalesLT Store'[Name]
