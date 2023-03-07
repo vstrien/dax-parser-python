@@ -29,7 +29,10 @@ tokens = [
     'IDENTIFIER',
     'NUMBER',
     'STRING',
-    'WHITESPACE'
+    'WHITESPACE',
+    'AMPERSAND',
+    'GREATERTHAN',
+    'LESSTHAN'
 ] + list(reserved.values())
 
 # Define the regular expression for each token
@@ -48,9 +51,10 @@ t_DIVIDE = r'/'
 t_MODULO = r'%'
 t_POWER = r'\^'
 t_IDENTIFIER = r'[a-zA-Z_][a-zA-Z0-9_]*'
-t_NUMBER = r'\d+(\.\d+)?'
-t_STRING = r'\"[^\"]*\"'
 t_WHITESPACE = r'\s+'
+t_AMPERSAND = r'\&'
+t_GREATERTHAN = r'>'
+t_LESSTHAN = r'<'
 
 # A regular expression rule with some action code
 
@@ -62,11 +66,11 @@ def t_NUMBER(t):
 
 def t_STRING(t):
     r'\"[^\"]*\"'
-    t.value = t.value[1:-1]
+    t.value = t.value[1:-1] # strip off the double quotes
     return t
 
 # Define a rule so we can track line numbers
-def t_newline(t):
+def t_NEWLINE(t):
     r'\n+'
     t.lexer.lineno += len(t.value)
 
