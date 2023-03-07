@@ -7,32 +7,62 @@ reserved = {
 
 
 # List of token names
-# Moet nog uitgebreid worden: 
+# Moet nog uitgebreid worden:
 # Vergelijkingen
 # Unary / binary? (minus)
 # boolean vergelijkingen
 tokens = [
-    'NUMBER',
+    'LBRACKET',
+    'RBRACKET',
+    'LPAREN',
+    'RPAREN',
+    'COMMA',
+    'COLON',
+    'SEMICOLON',
+    'EQUALS',
     'PLUS',
     'MINUS',
     'TIMES',
     'DIVIDE',
-    'LPAREN',
-    'RPAREN'
+    'MODULO',
+    'POWER',
+    'IDENTIFIER',
+    'NUMBER',
+    'STRING',
+    'WHITESPACE'
 ] + list(reserved.values())
 
-# Regular expression rules for simple tokens
-t_PLUS    = r'\+'
-t_MINUS   = r'-'
-t_TIMES   = r'\*'
-t_DIVIDE  = r'/'
-t_LPAREN  = r'\('
-t_RPAREN  = r'\)'
+# Define the regular expression for each token
+t_LBRACKET = r'\['
+t_RBRACKET = r'\]'
+t_LPAREN = r'\('
+t_RPAREN = r'\)'
+t_COMMA = r','
+t_COLON = r':'
+t_SEMICOLON = r';'
+t_EQUALS = r'='
+t_PLUS = r'\+'
+t_MINUS = r'-'
+t_TIMES = r'\*'
+t_DIVIDE = r'/'
+t_MODULO = r'%'
+t_POWER = r'\^'
+t_IDENTIFIER = r'[a-zA-Z_][a-zA-Z0-9_]*'
+t_NUMBER = r'\d+(\.\d+)?'
+t_STRING = r'\"[^\"]*\"'
+t_WHITESPACE = r'\s+'
 
- # A regular expression rule with some action code
+# A regular expression rule with some action code
+
+
 def t_NUMBER(t):
-    r'\d+'
-    t.value = int(t.value)    
+    r'\d+(\.\d+)?'
+    t.value = float(t.value)
+    return t
+
+def t_STRING(t):
+    r'\"[^\"]*\"'
+    t.value = t.value[1:-1]
     return t
 
 # Define a rule so we can track line numbers
@@ -40,22 +70,30 @@ def t_newline(t):
     r'\n+'
     t.lexer.lineno += len(t.value)
 
+
 # A string containing ignored characters (spaces and tabs)
-t_ignore  = ' \t'
+t_ignore = ' \t'
 
 # Error handling rule
 def t_error(t):
     print("Illegal character '%s'" % t.value[0])
     t.lexer.skip(1)
 
+
 # Build the lexer
 lexer = lex.lex()
 
-
-data = '''
-3 + 4 * 10
-+ -20 * 2
-'''
+# Test the lexerr
+data = '''EVALUATE 
+    ROW("salesamount",
+    CALCULATE (
+        SUM ( Sales[Unit Price] ),
+        FILTER (
+            Product,
+            Product[Color] = "Red" && Product[Weight] > 3
+        )
+    )
+    )'''
 
 lexer.input(data)
 
@@ -64,7 +102,7 @@ while True:
     if not tok:
         break
     print(tok)
-    
+
 # Vier soorten DAX expressies:
 
 # 1. Calculations
@@ -72,12 +110,12 @@ while True:
 #     Naam + "=" + Formula
 # 1b. Calculated columns
 #     Naam + "=" + Formula
-#     Tabel en kolom waaraan gekoppeld 
+#     Tabel en kolom waaraan gekoppeld
 # 1c. Calculated tables
 #     Naam + "=" + Formula
 #     Tabel waaraan gekoppeld
 # 1d. Row-level security formula's
-#     Naam (van regel) 
+#     Naam (van regel)
 #     "=" + Formula
 
 # 2. Queries
@@ -108,14 +146,7 @@ while True:
 
 # Datatypes
 DAX_DATATYPES = {
-    "Whole Number"
-    , "Decimal number"
-    , "Boolean"
-    , "Text"
-    , "Date"
-    , "Currency"
-    , "N/A"
-    , "Table"
+    "Whole Number", "Decimal number", "Boolean", "Text", "Date", "Currency", "N/A", "Table"
 }
 
 # Context
@@ -124,27 +155,11 @@ DAX_DATATYPES = {
 # Operators
 # 1. Arithmetic unary operators
 UNARY_OPERATORS = {
-    "+"
-    , "-"
+    "+", "-"
 }
 
 BINARY_OPERATORS = {
-    "+"
-    , "-"
-    , "*"
-    , "/"
-    , "^"
-    , "="
-    , "=="
-    , ">"
-    , "<"
-    , ">="
-    , "<="
-    , "<>"
-    , "&"
-    , "&&"
-    , "||"
-    , "IN"
+    "+", "-", "*", "/", "^", "=", "==", ">", "<", ">=", "<=", "<>", "&", "&&", "||", "IN"
 }
 
 # Fully qualified name
