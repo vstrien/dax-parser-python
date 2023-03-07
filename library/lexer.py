@@ -87,26 +87,6 @@ def t_error(t):
 # Build the lexer
 lexer = lex.lex()
 
-# Test the lexerr
-data = '''EVALUATE 
-    ROW("salesamount",
-    CALCULATE (
-        SUM ( Sales[Unit Price] ),
-        FILTER (
-            Product,
-            Product[Color] = "Red" && Product[Weight] > 3
-        )
-    )
-    )'''
-
-lexer.input(data)
-
-while True:
-    tok = lexer.token()
-    if not tok:
-        break
-    print(tok)
-
 # Vier soorten DAX expressies:
 
 # 1. Calculations

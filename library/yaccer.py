@@ -1,5 +1,5 @@
 import ply.yacc as yacc
-from lexer import tokens
+from library.lexer import tokens
 
 # Define the grammar rules
 def p_expression_plus(p):
@@ -34,16 +34,12 @@ def p_factor_primary(p):
     'factor : primary'
     p[0] = p[1]
 
-def p_primary_float(p):
-    'primary : FLOAT'
+def p_primary_number(p):
+    'primary : NUMBER'
     p[0] = float(p[1])
 
 def p_primary_identifier(p):
     'primary : IDENTIFIER'
-    p[0] = p[1]
-
-def p_primary_function(p):
-    'primary : FUNCTION args'
     p[0] = p[1]
 
 def p_args(p):
@@ -57,6 +53,9 @@ def p_arglist_single(p):
 def p_arglist_multi(p):
     'arglist : arglist COMMA expression'
     p[0] = p[1] + [p[3]]
+
+def p_whitespace(p):
+    'primary : WHITESPACE'
 
 # Error rule for syntax errors
 def p_error(p):
