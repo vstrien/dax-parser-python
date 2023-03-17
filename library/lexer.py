@@ -43,7 +43,6 @@ tokens = [
     'GREATEREQUAL',
     'LESSEQUAL',
     'NOTEQUAL',
-    'QUOTE',
     'AND',
 ] + list(reserved.values()) + list(functions)
 
@@ -72,7 +71,6 @@ t_LESSEQUAL =r'<='
 t_NOTEQUAL =r'<>'
 t_EVALUATE = r'EVALUATE'
 t_FILTER = r'FILTER'
-t_QUOTE = r'\''
 t_CALCULATE = r'CALCULATE'
 t_ROW = r'ROW'
 t_SUM = r'SUM'
