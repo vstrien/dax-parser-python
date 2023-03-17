@@ -2,10 +2,17 @@ import ply.lex as lex
 
 # Reserved words:
 reserved = {
-    'EVALUATE': 'EVALUATE'
+    'EVALUATE': 'EVALUATE',
+    'DEFINE': 'DEFINE'
 }
 
-
+# functions
+functions = [
+    'FILTER',
+    'ROW',
+    'SUM',
+    'CALCULATE',
+]
 # List of token names
 # Moet nog uitgebreid worden:
 # Vergelijkingen
@@ -31,9 +38,14 @@ tokens = [
     'STRING',
     'WHITESPACE',
     'AMPERSAND',
-    'GREATERTHAN',
-    'LESSTHAN'
-] + list(reserved.values())
+    'GREATER', # GREATER
+    'LESS', # LESS
+    'GREATEREQUAL',
+    'LESSEQUAL',
+    'NOTEQUAL',
+    'QUOTE',
+    'AND',
+] + list(reserved.values()) + list(functions)
 
 # Define the regular expression for each token
 t_LBRACKET = r'\['
@@ -53,11 +65,18 @@ t_POWER = r'\^'
 t_IDENTIFIER = r'[a-zA-Z_][a-zA-Z0-9_]*'
 t_WHITESPACE = r'\s+'
 t_AMPERSAND = r'\&'
-t_GREATERTHAN = r'>'
-t_LESSTHAN = r'<'
-
-# A regular expression rule with some action code
-
+t_GREATER = r'>'
+t_LESS = r'<'
+t_GREATEREQUAL = r'>='
+t_LESSEQUAL =r'<='
+t_NOTEQUAL =r'<>'
+t_EVALUATE = r'EVALUATE'
+t_FILTER = r'FILTER'
+t_QUOTE = r'\''
+t_CALCULATE = r'CALCULATE'
+t_ROW = r'ROW'
+t_SUM = r'SUM'
+t_AND = r'&&'
 
 def t_NUMBER(t):
     r'\d+(\.\d+)?'
