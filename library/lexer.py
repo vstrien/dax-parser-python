@@ -1,24 +1,24 @@
 import ply.lex as lex
 
 # Reserved words:
-reserved = {
+statements = {
     'EVALUATE': 'EVALUATE',
-    'DEFINE': 'DEFINE'
+    'DEFINE': 'DEFINE',
 }
 
 # functions
-functions = [
-    'FILTER',
-    'ROW',
-    'SUM',
-    'CALCULATE',
-]
+functions = {
+    'FILTER': 'FILTER',
+    'ROW': 'ROW',
+    'SUM': 'SUM',
+    'CALCULATE': 'CALCULATE',
+}
 # List of token names
 # Moet nog uitgebreid worden:
 # Vergelijkingen
 # Unary / binary? (minus)
 # boolean vergelijkingen
-tokens = [
+tokens = list(statements.values()) + list(functions.values()) + [
     'LBRACKET',
     'RBRACKET',
     'LPAREN',
@@ -33,20 +33,22 @@ tokens = [
     'DIVIDE',
     'MODULO',
     'POWER',
-    'IDENTIFIER',
     'NUMBER',
     'STRING',
     'WHITESPACE',
     'AMPERSAND',
-    'GREATER', # GREATER
-    'LESS', # LESS
+    'GREATER',
+    'LESS',
     'GREATEREQUAL',
     'LESSEQUAL',
     'NOTEQUAL',
     'AND',
-] + list(reserved.values()) + list(functions)
+    'TABLEID',
+    'COLUMNID',
+]
 
 # Define the regular expression for each token
+t_EVALUATE = r'EVALUATE'
 t_LBRACKET = r'\['
 t_RBRACKET = r'\]'
 t_LPAREN = r'\('
@@ -61,20 +63,28 @@ t_TIMES = r'\*'
 t_DIVIDE = r'/'
 t_MODULO = r'%'
 t_POWER = r'\^'
-t_IDENTIFIER = r'[a-zA-Z_][a-zA-Z0-9_]*'
 t_WHITESPACE = r'\s+'
+t_AND = r'\&\&'
 t_AMPERSAND = r'\&'
 t_GREATER = r'>'
 t_LESS = r'<'
 t_GREATEREQUAL = r'>='
 t_LESSEQUAL =r'<='
 t_NOTEQUAL =r'<>'
-t_EVALUATE = r'EVALUATE'
 t_FILTER = r'FILTER'
 t_CALCULATE = r'CALCULATE'
 t_ROW = r'ROW'
 t_SUM = r'SUM'
-t_AND = r'&&'
+
+def t_TABLEID(t):
+    r'[a-zA-Z_][a-zA-Z0-9_]*'
+    t.type = statements.get(t.value, functions.get(t.value, 'TABLEID')) # Check for reserved words
+    return t
+
+def t_COLUMNID(t):
+    r'\[[a-zA-Z_ ]+\]'
+    t.value = t.value[1:-1] # strip off the brackets
+    return t
 
 def t_NUMBER(t):
     r'\d+(\.\d+)?'
