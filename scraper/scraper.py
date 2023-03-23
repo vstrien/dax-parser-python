@@ -7,8 +7,9 @@ def get_navigation_tree(url):
     categories = soup.body.div.header.nav("ul")
     navtreedict = {}
 
-    # Split into different types of language elements
     print("Found {} categories".format(len(categories)))
+
+    # Iterate over the categories, extract category types and associated links
     for c in categories:
         if "data-type" in c.attrs:
             categorytype = c["data-type"][:-1]
@@ -25,19 +26,20 @@ def get_syntax_definitions(url):
     r = requests.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
     
-    # Get the title
+    # Extract the title
     title = soup.select("div.left-container")[0].header.h1.a.text    
-    # Get the syntax definition
+    # Extract the syntax definition
     syntax = soup.select("div.notation")[0].text
-    # Regex to remove whitespace and newline characters
+    # Clean the syntax by removing whitespace and newline characters
     syntax = re.sub(r"\s+", " ", syntax)
 
-    # Get the return type
+    # Extract the return type if it exists
     return_type = None
     return_section = soup.select("section#returns")
     if len(return_section) > 0 and len(return_section[0]("div")) > 0:
         return_type = return_section[0].div.span.text
 
+    # Return extracted information as a dictionary
     return {title: {"syntax": syntax, "return_type": return_type}}
 
 
@@ -51,7 +53,7 @@ def main():
         if categorytype == "Function":
             for url in nav[categorytype]:
                 try:
-                    # Maybe not the fastest way. But at least it's clear what happens
+                    # Extract syntax definitions and store them in the dictionary
                     syntax_definitions[categorytype].update(get_syntax_definitions(url))
                 except (AttributeError, IndexError) as e:
                     print("Error on {}".format(url))
@@ -59,5 +61,6 @@ def main():
 
     json.dump(syntax_definitions, open("syntax_definitions.json", "w"))
               
+# Execute the main function if the script is run directly
 if __name__ == "__main__":
     main()
