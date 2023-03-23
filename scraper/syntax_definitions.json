@@ -1,0 +1,1506 @@
+{
+    "Function": {
+        "ABS": {
+            "syntax": " ABS ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ACCRINT": {
+            "syntax": " ACCRINT ( <Issue>, <First_interest>, <Settlement>, <Rate>, <Par>, <Frequency> [, <Basis>] [, <Calc_method>] ) ",
+            "return_type": "Scalar"
+        },
+        "ACCRINTM": {
+            "syntax": " ACCRINTM ( <Issue>, <Maturity>, <Rate>, <Par> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "ACOS": {
+            "syntax": " ACOS ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ACOSH": {
+            "syntax": " ACOSH ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ACOT": {
+            "syntax": " ACOT ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ACOTH": {
+            "syntax": " ACOTH ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ADDCOLUMNS": {
+            "syntax": " ADDCOLUMNS ( <Table>, <Name>, <Expression> [, <Name>, <Expression> [, \u2026 ] ] ) ",
+            "return_type": "Table"
+        },
+        "ADDMISSINGITEMS": {
+            "syntax": " ADDMISSINGITEMS ( [<ShowAll_ColumnName> [, <ShowAll_ColumnName> [, \u2026 ] ] ], <Table> [, <GroupBy_ColumnName> [, [<FilterTable>] [, <GroupBy_ColumnName> [, [<FilterTable>] [, \u2026 ] ] ] ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "ALL": {
+            "syntax": " ALL ( [<TableNameOrColumnName>] [, <ColumnName> [, <ColumnName> [, \u2026 ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "ALLCROSSFILTERED": {
+            "syntax": " ALLCROSSFILTERED ( <TableName> ) ",
+            "return_type": null
+        },
+        "ALLEXCEPT": {
+            "syntax": " ALLEXCEPT ( <TableName>, <ColumnName> [, <ColumnName> [, \u2026 ] ] ) ",
+            "return_type": "Table"
+        },
+        "ALLNOBLANKROW": {
+            "syntax": " ALLNOBLANKROW ( <TableNameOrColumnName> [, <ColumnName> [, <ColumnName> [, \u2026 ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "ALLSELECTED": {
+            "syntax": " ALLSELECTED ( [<TableNameOrColumnName>] [, <ColumnName> [, <ColumnName> [, \u2026 ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "AMORDEGRC": {
+            "syntax": " AMORDEGRC ( <Cost>, <Date_purchased>, <First_period>, <Salvage>, <Period>, <Rate> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "AMORLINC": {
+            "syntax": " AMORLINC ( <Cost>, <Date_purchased>, <First_period>, <Salvage>, <Period>, <Rate> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "AND": {
+            "syntax": " AND ( <Logical1>, <Logical2> ) ",
+            "return_type": "Scalar"
+        },
+        "APPROXIMATEDISTINCTCOUNT": {
+            "syntax": " APPROXIMATEDISTINCTCOUNT ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "ASIN": {
+            "syntax": " ASIN ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ASINH": {
+            "syntax": " ASINH ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ATAN": {
+            "syntax": " ATAN ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ATANH": {
+            "syntax": " ATANH ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "AVERAGE": {
+            "syntax": " AVERAGE ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "AVERAGEA": {
+            "syntax": " AVERAGEA ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "AVERAGEX": {
+            "syntax": " AVERAGEX ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "BETA.DIST": {
+            "syntax": " BETA.DIST ( <X>, <Alpha>, <Beta>, <Cumulative> [, <A>] [, <B>] ) ",
+            "return_type": "Scalar"
+        },
+        "BETA.INV": {
+            "syntax": " BETA.INV ( <Probability>, <Alpha>, <Beta> [, <A>] [, <B>] ) ",
+            "return_type": "Scalar"
+        },
+        "BITAND": {
+            "syntax": " BITAND ( <Number1>, <Number2> ) ",
+            "return_type": "Scalar"
+        },
+        "BITLSHIFT": {
+            "syntax": " BITLSHIFT ( <Number>, <ShiftAmount> ) ",
+            "return_type": "Scalar"
+        },
+        "BITOR": {
+            "syntax": " BITOR ( <Number1>, <Number2> ) ",
+            "return_type": "Scalar"
+        },
+        "BITRSHIFT": {
+            "syntax": " BITRSHIFT ( <Number>, <ShiftAmount> ) ",
+            "return_type": "Scalar"
+        },
+        "BITXOR": {
+            "syntax": " BITXOR ( <Number1>, <Number2> ) ",
+            "return_type": "Scalar"
+        },
+        "BLANK": {
+            "syntax": " BLANK ( ) ",
+            "return_type": "Scalar"
+        },
+        "CALCULATE": {
+            "syntax": " CALCULATE ( <Expression> [, <Filter> [, <Filter> [, \u2026 ] ] ] ) ",
+            "return_type": "Scalar"
+        },
+        "CALCULATETABLE": {
+            "syntax": " CALCULATETABLE ( <Table> [, <Filter> [, <Filter> [, \u2026 ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "CALENDAR": {
+            "syntax": " CALENDAR ( <StartDate>, <EndDate> ) ",
+            "return_type": "Table"
+        },
+        "CALENDARAUTO": {
+            "syntax": " CALENDARAUTO ( [<FiscalYearEndMonth>] ) ",
+            "return_type": "Table"
+        },
+        "CEILING": {
+            "syntax": " CEILING ( <Number>, <Significance> ) ",
+            "return_type": "Scalar"
+        },
+        "CHISQ.DIST": {
+            "syntax": " CHISQ.DIST ( <X>, <Deg_freedom>, <Cumulative> ) ",
+            "return_type": "Scalar"
+        },
+        "CHISQ.DIST.RT": {
+            "syntax": " CHISQ.DIST.RT ( <X>, <Deg_freedom> ) ",
+            "return_type": "Scalar"
+        },
+        "CHISQ.INV": {
+            "syntax": " CHISQ.INV ( <Probability>, <Deg_freedom> ) ",
+            "return_type": "Scalar"
+        },
+        "CHISQ.INV.RT": {
+            "syntax": " CHISQ.INV.RT ( <Probability>, <Deg_freedom> ) ",
+            "return_type": "Scalar"
+        },
+        "CLOSINGBALANCEMONTH": {
+            "syntax": " CLOSINGBALANCEMONTH ( <Expression>, <Dates> [, <Filter>] ) ",
+            "return_type": "Scalar"
+        },
+        "CLOSINGBALANCEQUARTER": {
+            "syntax": " CLOSINGBALANCEQUARTER ( <Expression>, <Dates> [, <Filter>] ) ",
+            "return_type": "Scalar"
+        },
+        "CLOSINGBALANCEYEAR": {
+            "syntax": " CLOSINGBALANCEYEAR ( <Expression>, <Dates> [, <Filter>] [, <YearEndDate>] ) ",
+            "return_type": "Scalar"
+        },
+        "COALESCE": {
+            "syntax": " COALESCE ( <Value1>, <Value2> [, <Value2> [, \u2026 ] ] ) ",
+            "return_type": "Scalar"
+        },
+        "COLUMNSTATISTICS": {
+            "syntax": " COLUMNSTATISTICS ( ) ",
+            "return_type": "Table"
+        },
+        "COMBIN": {
+            "syntax": " COMBIN ( <Number>, <Number_chosen> ) ",
+            "return_type": "Scalar"
+        },
+        "COMBINA": {
+            "syntax": " COMBINA ( <Number>, <Number_chosen> ) ",
+            "return_type": "Scalar"
+        },
+        "COMBINEVALUES": {
+            "syntax": " COMBINEVALUES ( <Delimiter>, <Expression1>, <Expression2> [, <Expression2> [, \u2026 ] ] ) ",
+            "return_type": "Scalar"
+        },
+        "CONCATENATE": {
+            "syntax": " CONCATENATE ( <Text1>, <Text2> ) ",
+            "return_type": "Scalar"
+        },
+        "CONCATENATEX": {
+            "syntax": " CONCATENATEX ( <Table>, <Expression> [, <Delimiter>] [, <OrderBy_Expression> [, [<Order>] [, <OrderBy_Expression> [, [<Order>] [, \u2026 ] ] ] ] ] ) ",
+            "return_type": "Scalar"
+        },
+        "CONFIDENCE.NORM": {
+            "syntax": " CONFIDENCE.NORM ( <Alpha>, <Standard_dev>, <Size> ) ",
+            "return_type": "Scalar"
+        },
+        "CONFIDENCE.T": {
+            "syntax": " CONFIDENCE.T ( <Alpha>, <Standard_dev>, <Size> ) ",
+            "return_type": "Scalar"
+        },
+        "CONTAINS": {
+            "syntax": " CONTAINS ( <Table>, <ColumnName>, <Value> [, <ColumnName>, <Value> [, \u2026 ] ] ) ",
+            "return_type": "Scalar"
+        },
+        "CONTAINSROW": {
+            "syntax": " CONTAINSROW ( <Table>, <Value> [, <Value> [, \u2026 ] ] ) ",
+            "return_type": "Scalar"
+        },
+        "CONTAINSSTRING": {
+            "syntax": " CONTAINSSTRING ( <WithinText>, <FindText> ) ",
+            "return_type": "Scalar"
+        },
+        "CONTAINSSTRINGEXACT": {
+            "syntax": " CONTAINSSTRINGEXACT ( <WithinText>, <FindText> ) ",
+            "return_type": "Scalar"
+        },
+        "CONVERT": {
+            "syntax": " CONVERT ( <Expression>, <DataType> ) ",
+            "return_type": "Scalar"
+        },
+        "COS": {
+            "syntax": " COS ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "COSH": {
+            "syntax": " COSH ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "COT": {
+            "syntax": " COT ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "COTH": {
+            "syntax": " COTH ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "COUNT": {
+            "syntax": " COUNT ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "COUNTA": {
+            "syntax": " COUNTA ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "COUNTAX": {
+            "syntax": " COUNTAX ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "COUNTBLANK": {
+            "syntax": " COUNTBLANK ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "COUNTROWS": {
+            "syntax": " COUNTROWS ( [<Table>] ) ",
+            "return_type": "Scalar"
+        },
+        "COUNTX": {
+            "syntax": " COUNTX ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "COUPDAYBS": {
+            "syntax": " COUPDAYBS ( <Settlement>, <Maturity>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "COUPDAYS": {
+            "syntax": " COUPDAYS ( <Settlement>, <Maturity>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "COUPDAYSNC": {
+            "syntax": " COUPDAYSNC ( <Settlement>, <Maturity>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "COUPNCD": {
+            "syntax": " COUPNCD ( <Settlement>, <Maturity>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "COUPNUM": {
+            "syntax": " COUPNUM ( <Settlement>, <Maturity>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "COUPPCD": {
+            "syntax": " COUPPCD ( <Settlement>, <Maturity>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "CROSSFILTER": {
+            "syntax": " CROSSFILTER ( <LeftColumnName>, <RightColumnName>, <CrossFilterType> ) ",
+            "return_type": null
+        },
+        "CROSSJOIN": {
+            "syntax": " CROSSJOIN ( <Table> [, <Table> [, \u2026 ] ] ) ",
+            "return_type": "Table"
+        },
+        "CUMIPMT": {
+            "syntax": " CUMIPMT ( <Rate>, <Nper>, <Pv>, <Start_period>, <End_period>, <Type> ) ",
+            "return_type": "Scalar"
+        },
+        "CUMPRINC": {
+            "syntax": " CUMPRINC ( <Rate>, <Nper>, <Pv>, <Start_period>, <End_period>, <Type> ) ",
+            "return_type": "Scalar"
+        },
+        "CURRENCY": {
+            "syntax": " CURRENCY ( <Value> ) ",
+            "return_type": "Scalar"
+        },
+        "CURRENTGROUP": {
+            "syntax": " CURRENTGROUP ( ) ",
+            "return_type": "Table"
+        },
+        "CUSTOMDATA": {
+            "syntax": " CUSTOMDATA ( ) ",
+            "return_type": "Scalar"
+        },
+        "DATATABLE": {
+            "syntax": " DATATABLE ( <name>, <type> [, <name>, <type> [, \u2026 ] ], <data> ) ",
+            "return_type": "Table"
+        },
+        "DATE": {
+            "syntax": " DATE ( <Year>, <Month>, <Day> ) ",
+            "return_type": "Scalar"
+        },
+        "DATEADD": {
+            "syntax": " DATEADD ( <Dates>, <NumberOfIntervals>, <Interval> ) ",
+            "return_type": "Table"
+        },
+        "DATEDIFF": {
+            "syntax": " DATEDIFF ( <Date1>, <Date2>, <Interval> ) ",
+            "return_type": "Scalar"
+        },
+        "DATESBETWEEN": {
+            "syntax": " DATESBETWEEN ( <Dates>, <StartDate>, <EndDate> ) ",
+            "return_type": "Table"
+        },
+        "DATESINPERIOD": {
+            "syntax": " DATESINPERIOD ( <Dates>, <StartDate>, <NumberOfIntervals>, <Interval> ) ",
+            "return_type": "Table"
+        },
+        "DATESMTD": {
+            "syntax": " DATESMTD ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "DATESQTD": {
+            "syntax": " DATESQTD ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "DATESYTD": {
+            "syntax": " DATESYTD ( <Dates> [, <YearEndDate>] ) ",
+            "return_type": "Table"
+        },
+        "DATEVALUE": {
+            "syntax": " DATEVALUE ( <DateText> ) ",
+            "return_type": "Scalar"
+        },
+        "DAY": {
+            "syntax": " DAY ( <Date> ) ",
+            "return_type": "Scalar"
+        },
+        "DB": {
+            "syntax": " DB ( <Cost>, <Salvage>, <Life>, <Period> [, <Month>] ) ",
+            "return_type": "Scalar"
+        },
+        "DDB": {
+            "syntax": " DDB ( <Cost>, <Salvage>, <Life>, <Period> [, <Factor>] ) ",
+            "return_type": "Scalar"
+        },
+        "DEGREES": {
+            "syntax": " DEGREES ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "DETAILROWS": {
+            "syntax": " DETAILROWS ( <Measure> ) ",
+            "return_type": "Table"
+        },
+        "DISC": {
+            "syntax": " DISC ( <Settlement>, <Maturity>, <Pr>, <Redemption> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "DISTINCT": {
+            "syntax": " DISTINCT ( <ColumnNameOrTableExpr> ) ",
+            "return_type": "Table"
+        },
+        "DISTINCTCOUNT": {
+            "syntax": " DISTINCTCOUNT ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "DISTINCTCOUNTNOBLANK": {
+            "syntax": " DISTINCTCOUNTNOBLANK ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "DIVIDE": {
+            "syntax": " DIVIDE ( <Numerator>, <Denominator> [, <AlternateResult>] ) ",
+            "return_type": "Scalar"
+        },
+        "DOLLARDE": {
+            "syntax": " DOLLARDE ( <Fractional_dollar>, <Fraction> ) ",
+            "return_type": "Scalar"
+        },
+        "DOLLARFR": {
+            "syntax": " DOLLARFR ( <Decimal_dollar>, <Fraction> ) ",
+            "return_type": "Scalar"
+        },
+        "DURATION": {
+            "syntax": " DURATION ( <Settlement>, <Maturity>, <Coupon>, <Yld>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "EARLIER": {
+            "syntax": " EARLIER ( <ColumnName> [, <Number>] ) ",
+            "return_type": "Scalar"
+        },
+        "EARLIEST": {
+            "syntax": " EARLIEST ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "EDATE": {
+            "syntax": " EDATE ( <StartDate>, <Months> ) ",
+            "return_type": "Scalar"
+        },
+        "EFFECT": {
+            "syntax": " EFFECT ( <Nominal_rate>, <Npery> ) ",
+            "return_type": "Scalar"
+        },
+        "ENDOFMONTH": {
+            "syntax": " ENDOFMONTH ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "ENDOFQUARTER": {
+            "syntax": " ENDOFQUARTER ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "ENDOFYEAR": {
+            "syntax": " ENDOFYEAR ( <Dates> [, <YearEndDate>] ) ",
+            "return_type": "Table"
+        },
+        "EOMONTH": {
+            "syntax": " EOMONTH ( <StartDate>, <Months> ) ",
+            "return_type": "Scalar"
+        },
+        "ERROR": {
+            "syntax": " ERROR ( <ErrorText> ) ",
+            "return_type": null
+        },
+        "EVALUATEANDLOG": {
+            "syntax": " EVALUATEANDLOG ( <Value> [, <Label>] [, <MaxRows>] ) ",
+            "return_type": "Scalar"
+        },
+        "EVEN": {
+            "syntax": " EVEN ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "EXACT": {
+            "syntax": " EXACT ( <Text1>, <Text2> ) ",
+            "return_type": "Scalar"
+        },
+        "EXCEPT": {
+            "syntax": " EXCEPT ( <LeftTable>, <RightTable> ) ",
+            "return_type": "Table"
+        },
+        "EXP": {
+            "syntax": " EXP ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "EXPON.DIST": {
+            "syntax": " EXPON.DIST ( <X>, <Lambda>, <Cumulative> ) ",
+            "return_type": "Scalar"
+        },
+        "FACT": {
+            "syntax": " FACT ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "FALSE": {
+            "syntax": " FALSE ( ) ",
+            "return_type": "Scalar"
+        },
+        "FILTER": {
+            "syntax": " FILTER ( <Table>, <FilterExpression> ) ",
+            "return_type": "Table"
+        },
+        "FILTERS": {
+            "syntax": " FILTERS ( <ColumnName> ) ",
+            "return_type": "Table"
+        },
+        "FIND": {
+            "syntax": " FIND ( <FindText>, <WithinText> [, <StartPosition>] [, <NotFoundValue>] ) ",
+            "return_type": "Scalar"
+        },
+        "FIRSTDATE": {
+            "syntax": " FIRSTDATE ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "FIRSTNONBLANK": {
+            "syntax": " FIRSTNONBLANK ( <ColumnName>, <Expression> ) ",
+            "return_type": "Table"
+        },
+        "FIRSTNONBLANKVALUE": {
+            "syntax": " FIRSTNONBLANKVALUE ( <ColumnName>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "FIXED": {
+            "syntax": " FIXED ( <Number> [, <Decimals>] [, <NoCommas>] ) ",
+            "return_type": "Scalar"
+        },
+        "FLOOR": {
+            "syntax": " FLOOR ( <Number>, <Significance> ) ",
+            "return_type": "Scalar"
+        },
+        "FORMAT": {
+            "syntax": " FORMAT ( <Value>, <Format> [, <LocaleName>] ) ",
+            "return_type": "Scalar"
+        },
+        "FV": {
+            "syntax": " FV ( <Rate>, <Nper>, <Pmt> [, <Pv>] [, <Type>] ) ",
+            "return_type": "Scalar"
+        },
+        "GCD": {
+            "syntax": " GCD ( <Number1>, <Number2> ) ",
+            "return_type": "Scalar"
+        },
+        "GENERATE": {
+            "syntax": " GENERATE ( <Table1>, <Table2> ) ",
+            "return_type": "Table"
+        },
+        "GENERATEALL": {
+            "syntax": " GENERATEALL ( <Table1>, <Table2> ) ",
+            "return_type": "Table"
+        },
+        "GENERATESERIES": {
+            "syntax": " GENERATESERIES ( <StartValue>, <EndValue> [, <IncrementValue>] ) ",
+            "return_type": "Table"
+        },
+        "GEOMEAN": {
+            "syntax": " GEOMEAN ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "GEOMEANX": {
+            "syntax": " GEOMEANX ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "GROUPBY": {
+            "syntax": " GROUPBY ( <Table> [, <GroupBy_ColumnName> [, [<Name>] [, [<Expression>] [, <GroupBy_ColumnName> [, [<Name>] [, [<Expression>] [, \u2026 ] ] ] ] ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "HASH": {
+            "syntax": " HASH ( <Expression> [, <Expression> [, \u2026 ] ] ) ",
+            "return_type": null
+        },
+        "HASONEFILTER": {
+            "syntax": " HASONEFILTER ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "HASONEVALUE": {
+            "syntax": " HASONEVALUE ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "HOUR": {
+            "syntax": " HOUR ( <Datetime> ) ",
+            "return_type": "Scalar"
+        },
+        "IF": {
+            "syntax": " IF ( <LogicalTest>, <ResultIfTrue> [, <ResultIfFalse>] ) ",
+            "return_type": "Scalar"
+        },
+        "IF.EAGER": {
+            "syntax": " IF.EAGER ( <LogicalTest>, <ResultIfTrue> [, <ResultIfFalse>] ) ",
+            "return_type": "Scalar"
+        },
+        "IFERROR": {
+            "syntax": " IFERROR ( <Value>, <ValueIfError> ) ",
+            "return_type": "Scalar"
+        },
+        "IGNORE": {
+            "syntax": " IGNORE ( <Measure_Expression> ) ",
+            "return_type": null
+        },
+        "INDEX": {
+            "syntax": " INDEX ( <Position> [, <Relation>] [, <OrderBy>] [, <Blanks>] [, <PartitionBy>] ) ",
+            "return_type": "Table"
+        },
+        "INT": {
+            "syntax": " INT ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "INTERSECT": {
+            "syntax": " INTERSECT ( <LeftTable>, <RightTable> ) ",
+            "return_type": "Table"
+        },
+        "INTRATE": {
+            "syntax": " INTRATE ( <Settlement>, <Maturity>, <Investment>, <Redemption> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "IPMT": {
+            "syntax": " IPMT ( <Rate>, <Per>, <Nper>, <Pv> [, <Fv>] [, <Type>] ) ",
+            "return_type": "Scalar"
+        },
+        "ISAFTER": {
+            "syntax": " ISAFTER ( <Value1>, <Value2> [, [<Order>] [, <Value1>, <Value2> [, [<Order>] [, \u2026 ] ] ] ] ) ",
+            "return_type": "Scalar"
+        },
+        "ISBLANK": {
+            "syntax": " ISBLANK ( <Value> ) ",
+            "return_type": "Scalar"
+        },
+        "ISCROSSFILTERED": {
+            "syntax": " ISCROSSFILTERED ( <TableNameOrColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "ISEMPTY": {
+            "syntax": " ISEMPTY ( <Table> ) ",
+            "return_type": "Scalar"
+        },
+        "ISERROR": {
+            "syntax": " ISERROR ( <Value> ) ",
+            "return_type": "Scalar"
+        },
+        "ISEVEN": {
+            "syntax": " ISEVEN ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ISFILTERED": {
+            "syntax": " ISFILTERED ( <TableNameOrColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "ISINSCOPE": {
+            "syntax": " ISINSCOPE ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "ISLOGICAL": {
+            "syntax": " ISLOGICAL ( <Value> ) ",
+            "return_type": "Scalar"
+        },
+        "ISNONTEXT": {
+            "syntax": " ISNONTEXT ( <Value> ) ",
+            "return_type": "Scalar"
+        },
+        "ISNUMBER": {
+            "syntax": " ISNUMBER ( <Value> ) ",
+            "return_type": "Scalar"
+        },
+        "ISO.CEILING": {
+            "syntax": " ISO.CEILING ( <Number> [, <Significance>] ) ",
+            "return_type": "Scalar"
+        },
+        "ISODD": {
+            "syntax": " ISODD ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ISONORAFTER": {
+            "syntax": " ISONORAFTER ( <Value1>, <Value2> [, [<Order>] [, <Value1>, <Value2> [, [<Order>] [, \u2026 ] ] ] ] ) ",
+            "return_type": "Scalar"
+        },
+        "ISPMT": {
+            "syntax": " ISPMT ( <Rate>, <Per>, <Nper>, <Pv> ) ",
+            "return_type": "Scalar"
+        },
+        "ISSELECTEDMEASURE": {
+            "syntax": " ISSELECTEDMEASURE ( <Measure> [, <Measure> [, \u2026 ] ] ) ",
+            "return_type": "Scalar"
+        },
+        "ISSUBTOTAL": {
+            "syntax": " ISSUBTOTAL ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "ISTEXT": {
+            "syntax": " ISTEXT ( <Value> ) ",
+            "return_type": "Scalar"
+        },
+        "KEEPFILTERS": {
+            "syntax": " KEEPFILTERS ( <Expression> ) ",
+            "return_type": null
+        },
+        "KEYWORDMATCH": {
+            "syntax": " KEYWORDMATCH ( <MatchExpression>, <Text> ) ",
+            "return_type": "Scalar"
+        },
+        "LASTDATE": {
+            "syntax": " LASTDATE ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "LASTNONBLANK": {
+            "syntax": " LASTNONBLANK ( <ColumnName>, <Expression> ) ",
+            "return_type": "Table"
+        },
+        "LASTNONBLANKVALUE": {
+            "syntax": " LASTNONBLANKVALUE ( <ColumnName>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "LCM": {
+            "syntax": " LCM ( <Number1>, <Number2> ) ",
+            "return_type": "Scalar"
+        },
+        "LEFT": {
+            "syntax": " LEFT ( <Text> [, <NumberOfCharacters>] ) ",
+            "return_type": "Scalar"
+        },
+        "LEN": {
+            "syntax": " LEN ( <Text> ) ",
+            "return_type": "Scalar"
+        },
+        "LINEST": {
+            "syntax": " LINEST ( <ColumnY>, <ColumnX> [, <ColumnX> [, \u2026 ] ] [, <Const>] ) ",
+            "return_type": "Table"
+        },
+        "LINESTX": {
+            "syntax": " LINESTX ( <Table>, <ExpressionY>, <ExpressionX> [, <ExpressionX> [, \u2026 ] ] [, <Const>] ) ",
+            "return_type": null
+        },
+        "LN": {
+            "syntax": " LN ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "LOG": {
+            "syntax": " LOG ( <Number> [, <Base>] ) ",
+            "return_type": "Scalar"
+        },
+        "LOG10": {
+            "syntax": " LOG10 ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "LOOKUPVALUE": {
+            "syntax": " LOOKUPVALUE ( <Result_ColumnName>, <Search_ColumnName>, <Search_Value> [, <Search_ColumnName>, <Search_Value> [, \u2026 ] ] [, <Alternate_Result>] ) ",
+            "return_type": "Scalar"
+        },
+        "LOWER": {
+            "syntax": " LOWER ( <Text> ) ",
+            "return_type": "Scalar"
+        },
+        "MAX": {
+            "syntax": " MAX ( <ColumnNameOrScalar1> [, <Scalar2>] ) ",
+            "return_type": "Scalar"
+        },
+        "MAXA": {
+            "syntax": " MAXA ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "MAXX": {
+            "syntax": " MAXX ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "MDURATION": {
+            "syntax": " MDURATION ( <Settlement>, <Maturity>, <Coupon>, <Yld>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "MEDIAN": {
+            "syntax": " MEDIAN ( <Column> ) ",
+            "return_type": "Scalar"
+        },
+        "MEDIANX": {
+            "syntax": " MEDIANX ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "MID": {
+            "syntax": " MID ( <Text>, <StartPosition>, <NumberOfCharacters> ) ",
+            "return_type": "Scalar"
+        },
+        "MIN": {
+            "syntax": " MIN ( <ColumnNameOrScalar1> [, <Scalar2>] ) ",
+            "return_type": "Scalar"
+        },
+        "MINA": {
+            "syntax": " MINA ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "MINUTE": {
+            "syntax": " MINUTE ( <Datetime> ) ",
+            "return_type": "Scalar"
+        },
+        "MINX": {
+            "syntax": " MINX ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "MOD": {
+            "syntax": " MOD ( <Number>, <Divisor> ) ",
+            "return_type": "Scalar"
+        },
+        "MONTH": {
+            "syntax": " MONTH ( <Date> ) ",
+            "return_type": "Scalar"
+        },
+        "MROUND": {
+            "syntax": " MROUND ( <Number>, <Multiple> ) ",
+            "return_type": "Scalar"
+        },
+        "NAMEOF": {
+            "syntax": " NAMEOF ( <Value> ) ",
+            "return_type": "Scalar"
+        },
+        "NATURALINNERJOIN": {
+            "syntax": " NATURALINNERJOIN ( <LeftTable>, <RightTable> ) ",
+            "return_type": "Table"
+        },
+        "NATURALLEFTOUTERJOIN": {
+            "syntax": " NATURALLEFTOUTERJOIN ( <LeftTable>, <RightTable> ) ",
+            "return_type": "Table"
+        },
+        "NETWORKDAYS": {
+            "syntax": " NETWORKDAYS ( <start_date>, <end_date> [, <weekend>] [, <holidays>] ) ",
+            "return_type": "Scalar"
+        },
+        "NEXTDAY": {
+            "syntax": " NEXTDAY ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "NEXTMONTH": {
+            "syntax": " NEXTMONTH ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "NEXTQUARTER": {
+            "syntax": " NEXTQUARTER ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "NEXTYEAR": {
+            "syntax": " NEXTYEAR ( <Dates> [, <YearEndDate>] ) ",
+            "return_type": "Table"
+        },
+        "NOMINAL": {
+            "syntax": " NOMINAL ( <Effect_rate>, <Npery> ) ",
+            "return_type": "Scalar"
+        },
+        "NONVISUAL": {
+            "syntax": " NONVISUAL ( <Expression> ) ",
+            "return_type": "Table"
+        },
+        "NORM.DIST": {
+            "syntax": " NORM.DIST ( <X>, <Mean>, <Standard_dev>, <Cumulative> ) ",
+            "return_type": "Scalar"
+        },
+        "NORM.INV": {
+            "syntax": " NORM.INV ( <Probability>, <Mean>, <Standard_dev> ) ",
+            "return_type": "Scalar"
+        },
+        "NORM.S.DIST": {
+            "syntax": " NORM.S.DIST ( <Z>, <Cumulative> ) ",
+            "return_type": "Scalar"
+        },
+        "NORM.S.INV": {
+            "syntax": " NORM.S.INV ( <Probability> ) ",
+            "return_type": "Scalar"
+        },
+        "NOT": {
+            "syntax": " NOT ( <Logical> ) ",
+            "return_type": "Scalar"
+        },
+        "NOW": {
+            "syntax": " NOW ( ) ",
+            "return_type": "Scalar"
+        },
+        "NPER": {
+            "syntax": " NPER ( <Rate>, <Pmt>, <Pv> [, <Fv>] [, <Type>] ) ",
+            "return_type": "Scalar"
+        },
+        "ODD": {
+            "syntax": " ODD ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "ODDFPRICE": {
+            "syntax": " ODDFPRICE ( <Settlement>, <Maturity>, <Issue>, <First_coupon>, <Rate>, <Yld>, <Redemption>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "ODDFYIELD": {
+            "syntax": " ODDFYIELD ( <Settlement>, <Maturity>, <Issue>, <First_coupon>, <Rate>, <Pr>, <Redemption>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "ODDLPRICE": {
+            "syntax": " ODDLPRICE ( <Settlement>, <Maturity>, <Last_interest>, <Rate>, <Yld>, <Redemption>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "ODDLYIELD": {
+            "syntax": " ODDLYIELD ( <Settlement>, <Maturity>, <Last_interest>, <Rate>, <Pr>, <Redemption>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "OFFSET": {
+            "syntax": " OFFSET ( <Delta> [, <Relation>] [, <OrderBy>] [, <Blanks>] [, <PartitionBy>] ) ",
+            "return_type": "Table"
+        },
+        "OPENINGBALANCEMONTH": {
+            "syntax": " OPENINGBALANCEMONTH ( <Expression>, <Dates> [, <Filter>] ) ",
+            "return_type": "Scalar"
+        },
+        "OPENINGBALANCEQUARTER": {
+            "syntax": " OPENINGBALANCEQUARTER ( <Expression>, <Dates> [, <Filter>] ) ",
+            "return_type": "Scalar"
+        },
+        "OPENINGBALANCEYEAR": {
+            "syntax": " OPENINGBALANCEYEAR ( <Expression>, <Dates> [, <Filter>] [, <YearEndDate>] ) ",
+            "return_type": "Scalar"
+        },
+        "OR": {
+            "syntax": " OR ( <Logical1>, <Logical2> ) ",
+            "return_type": "Scalar"
+        },
+        "ORDERBY": {
+            "syntax": " ORDERBY ( [<OrderBy_Expression> [, [<OrderBy_Direction>] [, <OrderBy_Expression> [, [<OrderBy_Direction>] [, \u2026 ] ] ] ] ] ) ",
+            "return_type": null
+        },
+        "PARALLELPERIOD": {
+            "syntax": " PARALLELPERIOD ( <Dates>, <NumberOfIntervals>, <Interval> ) ",
+            "return_type": "Table"
+        },
+        "PARTITIONBY": {
+            "syntax": " PARTITIONBY ( [<PartitionBy_ColumnName> [, <PartitionBy_ColumnName> [, \u2026 ] ] ] ) ",
+            "return_type": null
+        },
+        "PATH": {
+            "syntax": " PATH ( <ID_ColumnName>, <Parent_ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "PATHCONTAINS": {
+            "syntax": " PATHCONTAINS ( <Path>, <Item> ) ",
+            "return_type": "Scalar"
+        },
+        "PATHITEM": {
+            "syntax": " PATHITEM ( <Path>, <Position> [, <Type>] ) ",
+            "return_type": "Scalar"
+        },
+        "PATHITEMREVERSE": {
+            "syntax": " PATHITEMREVERSE ( <Path>, <Position> [, <Type>] ) ",
+            "return_type": "Scalar"
+        },
+        "PATHLENGTH": {
+            "syntax": " PATHLENGTH ( <Path> ) ",
+            "return_type": "Scalar"
+        },
+        "PDURATION": {
+            "syntax": " PDURATION ( <Rate>, <Pv>, <Fv> ) ",
+            "return_type": "Scalar"
+        },
+        "PERCENTILE.EXC": {
+            "syntax": " PERCENTILE.EXC ( <Column>, <K> ) ",
+            "return_type": "Scalar"
+        },
+        "PERCENTILE.INC": {
+            "syntax": " PERCENTILE.INC ( <Column>, <K> ) ",
+            "return_type": "Scalar"
+        },
+        "PERCENTILEX.EXC": {
+            "syntax": " PERCENTILEX.EXC ( <Table>, <Expression>, <K> ) ",
+            "return_type": "Scalar"
+        },
+        "PERCENTILEX.INC": {
+            "syntax": " PERCENTILEX.INC ( <Table>, <Expression>, <K> ) ",
+            "return_type": "Scalar"
+        },
+        "PERMUT": {
+            "syntax": " PERMUT ( <Number>, <Number_chosen> ) ",
+            "return_type": "Scalar"
+        },
+        "PI": {
+            "syntax": " PI ( ) ",
+            "return_type": "Scalar"
+        },
+        "PMT": {
+            "syntax": " PMT ( <Rate>, <Nper>, <Pv> [, <Fv>] [, <Type>] ) ",
+            "return_type": "Scalar"
+        },
+        "POISSON.DIST": {
+            "syntax": " POISSON.DIST ( <X>, <Mean>, <Cumulative> ) ",
+            "return_type": "Scalar"
+        },
+        "POWER": {
+            "syntax": " POWER ( <Number>, <Power> ) ",
+            "return_type": "Scalar"
+        },
+        "PPMT": {
+            "syntax": " PPMT ( <Rate>, <Per>, <Nper>, <Pv> [, <Fv>] [, <Type>] ) ",
+            "return_type": "Scalar"
+        },
+        "PREVIOUSDAY": {
+            "syntax": " PREVIOUSDAY ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "PREVIOUSMONTH": {
+            "syntax": " PREVIOUSMONTH ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "PREVIOUSQUARTER": {
+            "syntax": " PREVIOUSQUARTER ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "PREVIOUSYEAR": {
+            "syntax": " PREVIOUSYEAR ( <Dates> [, <YearEndDate>] ) ",
+            "return_type": "Table"
+        },
+        "PRICE": {
+            "syntax": " PRICE ( <Settlement>, <Maturity>, <Rate>, <Yld>, <Redemption>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "PRICEDISC": {
+            "syntax": " PRICEDISC ( <Settlement>, <Maturity>, <Discount>, <Redemption> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "PRICEMAT": {
+            "syntax": " PRICEMAT ( <Settlement>, <Maturity>, <Issue>, <Rate>, <Yld> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "PRODUCT": {
+            "syntax": " PRODUCT ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "PRODUCTX": {
+            "syntax": " PRODUCTX ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "PV": {
+            "syntax": " PV ( <Rate>, <Nper>, <Pmt> [, <Fv>] [, <Type>] ) ",
+            "return_type": "Scalar"
+        },
+        "QUARTER": {
+            "syntax": " QUARTER ( <Date> ) ",
+            "return_type": "Scalar"
+        },
+        "QUOTIENT": {
+            "syntax": " QUOTIENT ( <Numerator>, <Denominator> ) ",
+            "return_type": "Scalar"
+        },
+        "RADIANS": {
+            "syntax": " RADIANS ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "RAND": {
+            "syntax": " RAND ( ) ",
+            "return_type": "Scalar"
+        },
+        "RANDBETWEEN": {
+            "syntax": " RANDBETWEEN ( <Bottom>, <Top> ) ",
+            "return_type": "Scalar"
+        },
+        "RANK.EQ": {
+            "syntax": " RANK.EQ ( <Value>, <ColumnName> [, <Order>] ) ",
+            "return_type": "Scalar"
+        },
+        "RANKX": {
+            "syntax": " RANKX ( <Table>, <Expression> [, <Value>] [, <Order>] [, <Ties>] ) ",
+            "return_type": "Scalar"
+        },
+        "RATE": {
+            "syntax": " RATE ( <Nper>, <Pmt>, <Pv> [, <Fv>] [, <Type>] [, <Guess>] ) ",
+            "return_type": "Scalar"
+        },
+        "RECEIVED": {
+            "syntax": " RECEIVED ( <Settlement>, <Maturity>, <Investment>, <Discount> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "RELATED": {
+            "syntax": " RELATED ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "RELATEDTABLE": {
+            "syntax": " RELATEDTABLE ( <Table> ) ",
+            "return_type": "Table"
+        },
+        "REMOVEFILTERS": {
+            "syntax": " REMOVEFILTERS ( [<TableNameOrColumnName>] [, <ColumnName> [, <ColumnName> [, \u2026 ] ] ] ) ",
+            "return_type": null
+        },
+        "REPLACE": {
+            "syntax": " REPLACE ( <OldText>, <StartPosition>, <NumberOfCharacters>, <NewText> ) ",
+            "return_type": "Scalar"
+        },
+        "REPT": {
+            "syntax": " REPT ( <Text>, <NumberOfTimes> ) ",
+            "return_type": "Scalar"
+        },
+        "RIGHT": {
+            "syntax": " RIGHT ( <Text> [, <NumberOfCharacters>] ) ",
+            "return_type": "Scalar"
+        },
+        "ROLLUP": {
+            "syntax": " ROLLUP ( <GroupBy_ColumnName> [, <GroupBy_ColumnName> [, \u2026 ] ] ) ",
+            "return_type": null
+        },
+        "ROLLUPADDISSUBTOTAL": {
+            "syntax": " ROLLUPADDISSUBTOTAL ( [<GrandtotalFilter>], <GroupBy_ColumnName>, <Name> [, [<GroupLevelFilter>] [, <GroupBy_ColumnName>, <Name> [, [<GroupLevelFilter>] [, \u2026 ] ] ] ] ) ",
+            "return_type": null
+        },
+        "ROLLUPGROUP": {
+            "syntax": " ROLLUPGROUP ( <GroupBy_ColumnName> [, <GroupBy_ColumnName> [, \u2026 ] ] ) ",
+            "return_type": null
+        },
+        "ROLLUPISSUBTOTAL": {
+            "syntax": " ROLLUPISSUBTOTAL ( [<GrandtotalFilter>], <GroupBy_ColumnName>, <IsSubtotal_ColumnName> [, [<GroupLevelFilter>] [, <GroupBy_ColumnName>, <IsSubtotal_ColumnName> [, [<GroupLevelFilter>] [, \u2026 ] ] ] ] ) ",
+            "return_type": null
+        },
+        "ROUND": {
+            "syntax": " ROUND ( <Number>, <NumberOfDigits> ) ",
+            "return_type": "Scalar"
+        },
+        "ROUNDDOWN": {
+            "syntax": " ROUNDDOWN ( <Number>, <NumberOfDigits> ) ",
+            "return_type": "Scalar"
+        },
+        "ROUNDUP": {
+            "syntax": " ROUNDUP ( <Number>, <NumberOfDigits> ) ",
+            "return_type": "Scalar"
+        },
+        "ROW": {
+            "syntax": " ROW ( <Name>, <Expression> [, <Name>, <Expression> [, \u2026 ] ] ) ",
+            "return_type": "Table"
+        },
+        "RRI": {
+            "syntax": " RRI ( <Nper>, <Pv>, <Fv> ) ",
+            "return_type": "Scalar"
+        },
+        "SAMEPERIODLASTYEAR": {
+            "syntax": " SAMEPERIODLASTYEAR ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "SAMPLE": {
+            "syntax": " SAMPLE ( <Size>, <Table>, <OrderBy> [, [<Order>] [, <OrderBy> [, [<Order>] [, \u2026 ] ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "SAMPLEAXISWITHLOCALMINMAX": {
+            "syntax": " SAMPLEAXISWITHLOCALMINMAX ( <Size>, <Table>, <Axis>, <Measure> [, <Measure> [, \u2026 ] ], <MinResolution> [, <DynamicSeries> [, <DynamicSeries> [, \u2026 ] ] [, <DynamicSeriesSelectionCriteria>] [, <DynamicSeriesSelectionOrder>] [, <MaxResolution>] [, <MaxDynamicSeries>] [, <MaxIterations>] ) ",
+            "return_type": "Table"
+        },
+        "SEARCH": {
+            "syntax": " SEARCH ( <FindText>, <WithinText> [, <StartPosition>] [, <NotFoundValue>] ) ",
+            "return_type": "Scalar"
+        },
+        "SECOND": {
+            "syntax": " SECOND ( <Datetime> ) ",
+            "return_type": "Scalar"
+        },
+        "SELECTCOLUMNS": {
+            "syntax": " SELECTCOLUMNS ( <Table> [[, <Name>], <Expression> [[, <Name>], <Expression> [, \u2026 ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "SELECTEDMEASURE": {
+            "syntax": " SELECTEDMEASURE ( ) ",
+            "return_type": "Scalar"
+        },
+        "SELECTEDMEASUREFORMATSTRING": {
+            "syntax": " SELECTEDMEASUREFORMATSTRING ( ) ",
+            "return_type": "Scalar"
+        },
+        "SELECTEDMEASURENAME": {
+            "syntax": " SELECTEDMEASURENAME ( ) ",
+            "return_type": "Scalar"
+        },
+        "SELECTEDVALUE": {
+            "syntax": " SELECTEDVALUE ( <ColumnName> [, <AlternateResult>] ) ",
+            "return_type": "Scalar"
+        },
+        "SIGN": {
+            "syntax": " SIGN ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "SIN": {
+            "syntax": " SIN ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "SINH": {
+            "syntax": " SINH ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "SLN": {
+            "syntax": " SLN ( <Cost>, <Salvage>, <Life> ) ",
+            "return_type": "Scalar"
+        },
+        "SQRT": {
+            "syntax": " SQRT ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "SQRTPI": {
+            "syntax": " SQRTPI ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "STARTOFMONTH": {
+            "syntax": " STARTOFMONTH ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "STARTOFQUARTER": {
+            "syntax": " STARTOFQUARTER ( <Dates> ) ",
+            "return_type": "Table"
+        },
+        "STARTOFYEAR": {
+            "syntax": " STARTOFYEAR ( <Dates> [, <YearEndDate>] ) ",
+            "return_type": "Table"
+        },
+        "STDEV.P": {
+            "syntax": " STDEV.P ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "STDEV.S": {
+            "syntax": " STDEV.S ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "STDEVX.P": {
+            "syntax": " STDEVX.P ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "STDEVX.S": {
+            "syntax": " STDEVX.S ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "SUBSTITUTE": {
+            "syntax": " SUBSTITUTE ( <Text>, <OldText>, <NewText> [, <InstanceNumber>] ) ",
+            "return_type": "Scalar"
+        },
+        "SUBSTITUTEWITHINDEX": {
+            "syntax": " SUBSTITUTEWITHINDEX ( <Table>, <Name>, <SemiJoinIndexTable>, <Expression> [, [<Order>] [, <Expression> [, [<Order>] [, \u2026 ] ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "SUM": {
+            "syntax": " SUM ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "SUMMARIZE": {
+            "syntax": " SUMMARIZE ( <Table> [, <GroupBy_ColumnName> [, [<Name>] [, [<Expression>] [, <GroupBy_ColumnName> [, [<Name>] [, [<Expression>] [, \u2026 ] ] ] ] ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "SUMMARIZECOLUMNS": {
+            "syntax": " SUMMARIZECOLUMNS ( [<GroupBy_ColumnName> [, [<FilterTable>] [, [<Name>] [, [<Expression>] [, <GroupBy_ColumnName> [, [<FilterTable>] [, [<Name>] [, [<Expression>] [, \u2026 ] ] ] ] ] ] ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "SUMX": {
+            "syntax": " SUMX ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "SWITCH": {
+            "syntax": " SWITCH ( <Expression>, <Value>, <Result> [, <Value>, <Result> [, \u2026 ] ] [, <Else>] ) ",
+            "return_type": "Scalar"
+        },
+        "SYD": {
+            "syntax": " SYD ( <Cost>, <Salvage>, <Life>, <Per> ) ",
+            "return_type": "Scalar"
+        },
+        "T.DIST": {
+            "syntax": " T.DIST ( <X>, <Deg_freedom>, <Cumulative> ) ",
+            "return_type": "Scalar"
+        },
+        "T.DIST.2T": {
+            "syntax": " T.DIST.2T ( <X>, <Deg_freedom> ) ",
+            "return_type": "Scalar"
+        },
+        "T.DIST.RT": {
+            "syntax": " T.DIST.RT ( <X>, <Deg_freedom> ) ",
+            "return_type": "Scalar"
+        },
+        "T.INV": {
+            "syntax": " T.INV ( <Probability>, <Deg_freedom> ) ",
+            "return_type": "Scalar"
+        },
+        "T.INV.2T": {
+            "syntax": " T.INV.2T ( <Probability>, <Deg_freedom> ) ",
+            "return_type": "Scalar"
+        },
+        "TAN": {
+            "syntax": " TAN ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "TANH": {
+            "syntax": " TANH ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "TBILLEQ": {
+            "syntax": " TBILLEQ ( <Settlement>, <Maturity>, <Discount> ) ",
+            "return_type": "Scalar"
+        },
+        "TBILLPRICE": {
+            "syntax": " TBILLPRICE ( <Settlement>, <Maturity>, <Discount> ) ",
+            "return_type": "Scalar"
+        },
+        "TBILLYIELD": {
+            "syntax": " TBILLYIELD ( <Settlement>, <Maturity>, <Pr> ) ",
+            "return_type": "Scalar"
+        },
+        "TIME": {
+            "syntax": " TIME ( <Hour>, <Minute>, <Second> ) ",
+            "return_type": "Scalar"
+        },
+        "TIMEVALUE": {
+            "syntax": " TIMEVALUE ( <TimeText> ) ",
+            "return_type": "Scalar"
+        },
+        "TOCSV": {
+            "syntax": " TOCSV ( <Table> [, <MaxRows>] [, <Delimiter>] [, <IncludeHeaders>] ) ",
+            "return_type": "Scalar"
+        },
+        "TODAY": {
+            "syntax": " TODAY ( ) ",
+            "return_type": "Scalar"
+        },
+        "TOJSON": {
+            "syntax": " TOJSON ( <Table> [, <MaxRows>] ) ",
+            "return_type": "Scalar"
+        },
+        "TOPN": {
+            "syntax": " TOPN ( <N_Value>, <Table> [, <OrderBy_Expression> [, [<Order>] [, <OrderBy_Expression> [, [<Order>] [, \u2026 ] ] ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "TOPNPERLEVEL": {
+            "syntax": " TOPNPERLEVEL ( <Rows>, <Table>, <LevelsDefinition>, <NodesExpanded>, <LevelsBoundaries>, <RestartIndicatorColumnName> ) ",
+            "return_type": "Table"
+        },
+        "TOPNSKIP": {
+            "syntax": " TOPNSKIP ( <Rows>, <Skip>, <Table> [, <OrderBy_Expression> [, [<Order>] [, <OrderBy_Expression> [, [<Order>] [, \u2026 ] ] ] ] ] ) ",
+            "return_type": "Table"
+        },
+        "TOTALMTD": {
+            "syntax": " TOTALMTD ( <Expression>, <Dates> [, <Filter>] ) ",
+            "return_type": "Scalar"
+        },
+        "TOTALQTD": {
+            "syntax": " TOTALQTD ( <Expression>, <Dates> [, <Filter>] ) ",
+            "return_type": "Scalar"
+        },
+        "TOTALYTD": {
+            "syntax": " TOTALYTD ( <Expression>, <Dates> [, <Filter>] [, <YearEndDate>] ) ",
+            "return_type": "Scalar"
+        },
+        "TREATAS": {
+            "syntax": " TREATAS ( <Expression>, <ColumnName> [, <ColumnName> [, \u2026 ] ] ) ",
+            "return_type": "Table"
+        },
+        "TRIM": {
+            "syntax": " TRIM ( <Text> ) ",
+            "return_type": "Scalar"
+        },
+        "TRUE": {
+            "syntax": " TRUE ( ) ",
+            "return_type": "Scalar"
+        },
+        "TRUNC": {
+            "syntax": " TRUNC ( <Number> [, <NumberOfDigits>] ) ",
+            "return_type": "Scalar"
+        },
+        "UNICHAR": {
+            "syntax": " UNICHAR ( <Number> ) ",
+            "return_type": "Scalar"
+        },
+        "UNICODE": {
+            "syntax": " UNICODE ( <Text> ) ",
+            "return_type": "Scalar"
+        },
+        "UNION": {
+            "syntax": " UNION ( <Table>, <Table> [, <Table> [, \u2026 ] ] ) ",
+            "return_type": "Table"
+        },
+        "UPPER": {
+            "syntax": " UPPER ( <Text> ) ",
+            "return_type": "Scalar"
+        },
+        "USERCULTURE": {
+            "syntax": " USERCULTURE ( ) ",
+            "return_type": "Scalar"
+        },
+        "USERELATIONSHIP": {
+            "syntax": " USERELATIONSHIP ( <ColumnName1>, <ColumnName2> ) ",
+            "return_type": null
+        },
+        "USERNAME": {
+            "syntax": " USERNAME ( ) ",
+            "return_type": "Scalar"
+        },
+        "USEROBJECTID": {
+            "syntax": " USEROBJECTID ( ) ",
+            "return_type": "Scalar"
+        },
+        "USERPRINCIPALNAME": {
+            "syntax": " USERPRINCIPALNAME ( ) ",
+            "return_type": "Scalar"
+        },
+        "UTCNOW": {
+            "syntax": " UTCNOW ( ) ",
+            "return_type": "Scalar"
+        },
+        "UTCTODAY": {
+            "syntax": " UTCTODAY ( ) ",
+            "return_type": "Scalar"
+        },
+        "VALUE": {
+            "syntax": " VALUE ( <Text> ) ",
+            "return_type": "Scalar"
+        },
+        "VALUES": {
+            "syntax": " VALUES ( <TableNameOrColumnName> ) ",
+            "return_type": "Table"
+        },
+        "VAR.P": {
+            "syntax": " VAR.P ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "VAR.S": {
+            "syntax": " VAR.S ( <ColumnName> ) ",
+            "return_type": "Scalar"
+        },
+        "VARX.P": {
+            "syntax": " VARX.P ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "VARX.S": {
+            "syntax": " VARX.S ( <Table>, <Expression> ) ",
+            "return_type": "Scalar"
+        },
+        "VDB": {
+            "syntax": " VDB ( <Cost>, <Salvage>, <Life>, <Start_period>, <End_period> [, <Factor>] [, <No_switch>] ) ",
+            "return_type": "Scalar"
+        },
+        "WEEKDAY": {
+            "syntax": " WEEKDAY ( <Date> [, <ReturnType>] ) ",
+            "return_type": "Scalar"
+        },
+        "WEEKNUM": {
+            "syntax": " WEEKNUM ( <Date> [, <ReturnType>] ) ",
+            "return_type": "Scalar"
+        },
+        "WINDOW": {
+            "syntax": " WINDOW ( <From> [, <FromType>], <To> [, <ToType>] [, <Relation>] [, <OrderBy>] [, <Blanks>] [, <PartitionBy>] ) ",
+            "return_type": "Table"
+        },
+        "XIRR": {
+            "syntax": " XIRR ( <Table>, <Values>, <Dates> [, <Guess>] [, <AlternateResult>] ) ",
+            "return_type": "Scalar"
+        },
+        "XNPV": {
+            "syntax": " XNPV ( <Table>, <Values>, <Dates>, <Rate> ) ",
+            "return_type": "Scalar"
+        },
+        "YEAR": {
+            "syntax": " YEAR ( <Date> ) ",
+            "return_type": "Scalar"
+        },
+        "YEARFRAC": {
+            "syntax": " YEARFRAC ( <StartDate>, <EndDate> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "YIELD": {
+            "syntax": " YIELD ( <Settlement>, <Maturity>, <Rate>, <Pr>, <Redemption>, <Frequency> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "YIELDDISC": {
+            "syntax": " YIELDDISC ( <Settlement>, <Maturity>, <Pr>, <Redemption> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        },
+        "YIELDMAT": {
+            "syntax": " YIELDMAT ( <Settlement>, <Maturity>, <Issue>, <Rate>, <Pr> [, <Basis>] ) ",
+            "return_type": "Scalar"
+        }
+    },
+    "Data type": {
+        "Binary": "Binary",
+        "Boolean": "Boolean",
+        "Currency": "Currency",
+        "DateTime": "DateTime",
+        "Decimal": "Decimal",
+        "Integer": "Integer",
+        "String": "String",
+        "Variant": "Variant"
+    },
+    "Operator": {
+        "Addition": "+",
+        "And": "&&",
+        "Concatenation": "&",
+        "Division": "/",
+        "Equals": "=",
+        "Exponentation": "^",
+        "Greather than": ">",
+        "Greater than or equal to": ">=",
+        "IN": "IN",
+        "Less than": "<",
+        "Less than or equal to": "<=",
+        "Multiplication": "*",
+        "NOT": "NOT",
+        "Not equal to": "<>",
+        "Or": "||",
+        "Strictly equal to": "==",
+        "Subtraction": "-",
+        "Table constructor": "{}"
+    },
+    "Statement": {
+        "DEFINE": {
+            "syntax": "[DEFINE\n(\n(MEASURE <table name>[<measure name>] = <scalar expression>) | \n(VAR <var name> = <table or scalar expression>) |\n(TABLE <table name> = <table expression>) | \n(COLUMN <table name>[<column name>] = <scalar expression>) | \n) + \n]"
+        },
+        "EVALUATE": {
+            "syntax": "EVALUATE <table expression>"
+        },
+        "MEASURE": {
+            "syntax": "MEASURE <table name>[<measure name>] = <scalar expression>"
+        },
+        "ORDER BY": {
+            "syntax": "ORDER BY {<expression> [ASC | DESC]}, [, ...]"
+        },
+        "START AT": {
+            "syntax": "START AT {<value>|<parameter>}, [, ...]"
+        },
+        "VAR": {
+            "syntax": "VAR <var name> = <table or scalar expression>"
+        }
+    }
+}
